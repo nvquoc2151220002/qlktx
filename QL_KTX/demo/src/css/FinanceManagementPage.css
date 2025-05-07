@@ -1,0 +1,178 @@
+.finance-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.finance-header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.fee-management-btn, .history-toggle-btn, .export-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.fee-management-btn {
+  background-color: #4CAF50;
+}
+
+.fee-management-btn:hover {
+  background-color: #45a049;
+}
+
+.history-toggle-btn {
+  background-color: #2196F3;
+}
+
+.history-toggle-btn:hover {
+  background-color: #1976D2;
+}
+
+.export-btn {
+  background-color: #ff9800;
+}
+
+.export-btn:hover {
+  background-color: #f57c00;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  white-space: normal;
+  min-height: 50px;
+  vertical-align: middle;
+}
+
+/* Finance table column widths */
+.finance-table th:first-child,
+.finance-table td:first-child {
+  width: 5%;
+  min-width: 40px;
+  text-align: center;
+}
+
+.finance-table th:nth-child(2) { width: 18%; }
+.finance-table th:nth-child(3) { width: 10%; }
+.finance-table th:nth-child(4) { width: 12%; }
+.finance-table th:nth-child(5) { width: 15%; }
+.finance-table th:nth-child(6) { width: 15%; }
+.finance-table th:nth-child(7) { width: 15%; }
+.finance-table th:nth-child(8) { width: 10%; }
+
+/* History table column widths */
+.history-table th:nth-child(1),
+.history-table td:nth-child(1) { width: 15%; }
+
+.history-table th:nth-child(2),
+.history-table td:nth-child(2) { width: 15%; }
+
+.history-table th:nth-child(3),
+.history-table td:nth-child(3) { width: 15%; }
+
+.history-table th:nth-child(4),
+.history-table td:nth-child(4) {
+  width: 55%;
+  white-space: normal;
+  word-wrap: break-word;
+  min-width: 300px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr.overdue {
+  background-color: #ffe6e6 !important;
+}
+
+/* Status styles */
+.status {
+  font-weight: bold;
+}
+
+.status.đã-thanh-toán {
+  color: #28a745;
+}
+
+.status.chưa-thanh-toán {
+  color: #ffc107;
+}
+
+.status.quá-hạn {
+  color: #dc3545;
+}
+
+/* Form and button styles */
+.search-form {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-form input,
+.search-form select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.pay-btn, .search-btn {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pay-btn {
+  background-color: #28a745;
+}
+
+.pay-btn:hover {
+  background-color: #218838;
+}
+
+.search-btn {
+  padding: 10px 24px;
+  background-color: #2196F3;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-btn:hover {
+  background-color: #1976D2;
+}

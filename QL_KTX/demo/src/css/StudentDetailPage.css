@@ -1,0 +1,109 @@
+.student-detail-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.student-detail-container h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.student-info {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #007bff;
+}
+
+.student-info-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.student-photo {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.photo-3x4 {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.info-group {
+  display: flex;
+  margin: 12px 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.info-group:last-child {
+  border-bottom: none;
+}
+
+.info-group label {
+  width: 180px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.info-group p {
+  margin: 0;
+  flex: 1;
+  color: #2c3e50;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.back-btn, .edit-btn, .view-contract-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.back-btn {
+  background: #6c757d;
+}
+
+.back-btn:hover {
+  background: #5a6268;
+}
+
+.edit-btn {
+  background: #007bff;
+}
+
+.edit-btn:hover {
+  background: #0056b3;
+}
+
+.view-contract-btn {
+  background: #28a745;
+}
+
+.view-contract-btn:hover {
+  background: #218838;
+}

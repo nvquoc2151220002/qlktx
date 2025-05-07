@@ -1,0 +1,128 @@
+.contract-detail-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contract-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contract-header h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contract-header h3 {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.contract-header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contract-semester, .contract-number {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.contract-content {
+  padding: 0 1rem;
+}
+
+.contract-section {
+  margin-bottom: 2rem;
+}
+
+.contract-section h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.info-group {
+  display: flex;
+  margin: 0.5rem 0;
+  align-items: baseline;
+}
+
+.info-group label {
+  min-width: 150px;
+  font-weight: 600;
+  color: #333;
+}
+
+.info-group p {
+  margin: 0;
+  flex: 1;
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.fee-table th,
+.fee-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.fee-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.fee-table .total-row {
+  font-weight: bold;
+}
+
+.fee-table .total-row td:last-child {
+  color: #007bff;
+}
+
+.back-btn {
+  display: block;
+  padding: 10px 20px;
+  margin: 2rem auto;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background: #5a6268;
+}
+
+@media print {
+  .contract-detail-container {
+    margin: 0;
+    padding: 1rem;
+    box-shadow: none;
+  }
+
+  .back-btn {
+    display: none;
+  }
+}
